@@ -22,6 +22,9 @@ export const dataSource = new DataSource({
   dateStrings: true,
   synchronize: false,
   connectTimeout: 2000,
+  ssl: {
+		rejectUnauthorized: true,
+	},
 
   logging: ["error", "warn"],
 
